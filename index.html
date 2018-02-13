@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Forecast Leave Portal</title>
+	<base href="/">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css"/>
+	<link rel="stylesheet" href="app/style/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="app/style/css/bootstrap-material-design.css">
+	<link rel="stylesheet" href="app/style/css/font-awesome.min.css">
+	<link rel="stylesheet" href="app/style/css/ripples.css">
+	<link rel="stylesheet" href="app/style/css/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="node_modules/primeng/resources/themes/omega/theme.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/primeng/resources/primeng.min.css" />
+	<link rel="stylesheet" type="text/css" href="node_modules/primeng/components/calendar/calendar.css"/>
+	<script src="node_modules/core-js/client/shim.min.js"></script>
+	<script src="node_modules/zone.js/dist/zone.js"></script>
+	<script src="node_modules/reflect-metadata/Reflect.js"></script>
+	<script src="node_modules/systemjs/dist/system.src.js"></script>
+	<script src="systemjs.config.js"></script>
+	<script>
+		System.import('app')
+			.catch(function(err){ console.error(err); });
+	</script>
+</head>
+<body>
+    <div>
+        <my-app>
+        	<div class="spinner-wrap">
+        		<div class="spinner"></div>
+        	</div>
+        </my-app>
+    </div>
+
+	<script src="app/lib/jquery-2.2.3.min.js"></script>
+	<script src="app/lib/jquery-ui.js"></script>
+    <script src="app/lib/tether.min.js"></script>
+    <script src="app/lib/bootstrap.min.js"></script>
+    <script src="app/lib/material.js"></script>
+    <script src="app/lib/ripples.js"></script>
+    <script src="app/lib/jquery.dropdown.js"></script>
+    <script type="text/javascript">
+    	$.material.init();
+    </script>
+</body>
+</html>
